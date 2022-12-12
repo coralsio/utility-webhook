@@ -11,7 +11,9 @@ use Spatie\Activitylog\Traits\LogsActivity;
 
 class Webhook extends BaseModel
 {
-    use PresentableTrait, LogsActivity, ModelPropertiesTrait;
+    use PresentableTrait;
+    use LogsActivity;
+    use ModelPropertiesTrait;
 
     protected $casts = [
         'payload' => 'json',
@@ -28,7 +30,6 @@ class Webhook extends BaseModel
     protected $guarded = ['id'];
 
     protected $table = 'utility_webhooks';
-
 
     /**
      * @throws Exception

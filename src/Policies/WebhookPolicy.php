@@ -11,7 +11,7 @@ class WebhookPolicy extends BasePolicy
     protected $administrationPermission = 'Administrations::admin.utility';
 
     protected $skippedAbilities = [
-        'process', 'create'
+        'process', 'create',
     ];
 
     public function view(User $user)

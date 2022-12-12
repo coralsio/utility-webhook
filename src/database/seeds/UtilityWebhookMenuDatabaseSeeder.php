@@ -28,7 +28,7 @@ class UtilityWebhookMenuDatabaseSeeder extends Seeder
                     'icon' => 'fa fa-anchor',
                     'target' => null,
                     'roles' => '["1"]',
-                    'order' => 0
+                    'order' => 0,
                 ],
             ]
         );

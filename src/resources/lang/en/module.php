@@ -3,6 +3,6 @@
 return [
     'webhook' => [
         'title' => 'Webhooks',
-        'title_singular' => 'Webhook'
+        'title_singular' => 'Webhook',
     ],
 ];

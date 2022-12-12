@@ -32,5 +32,4 @@ class UtilityWebhookViewTest extends TestCase
 
         $response->assertStatus(200)->assertViewIs('utility-webhook::webhooks.index');
     }
-    
 }

@@ -2,11 +2,10 @@
 
 namespace Corals\Modules\Utility\Webhook;
 
+use Corals\Modules\Utility\Webhook\Facades\Webhooks;
 use Corals\Modules\Utility\Webhook\Providers\UtilityAuthServiceProvider;
 use Corals\Modules\Utility\Webhook\Providers\UtilityRouteServiceProvider;
-use Corals\Modules\Utility\Webhook\Facades\Webhooks;
 use Corals\Settings\Facades\Modules;
-use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Foundation\AliasLoader;
 use Illuminate\Support\ServiceProvider;
 
@@ -39,7 +38,6 @@ class UtilityWebhookServiceProvider extends ServiceProvider
             $loader->alias('Webhooks', Webhooks::class);
         });
     }
-
 
     protected function registerModulesPackages()
     {

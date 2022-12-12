@@ -2,7 +2,6 @@
 
 namespace Corals\Modules\Utility\Webhook\Providers;
 
-
 use Corals\Modules\Utility\Webhook\Models\Webhook;
 use Corals\Modules\Utility\Webhook\Policies\WebhookPolicy;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;

@@ -15,10 +15,10 @@ return [
                     'policies' => ['process'],
                     'data' => [
                         'action' => 'post',
-                        'table' => '.dataTableBuilder'
-                    ]
+                        'table' => '.dataTableBuilder',
+                    ],
                 ],
-            ]
+            ],
         ],
     ],
 ];

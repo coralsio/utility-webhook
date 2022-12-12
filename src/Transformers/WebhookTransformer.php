@@ -28,9 +28,11 @@ class WebhookTransformer extends BaseTransformer
         switch ($webhook->status) {
             case 'processed':
                 $statusLevel = 'success';
+
                 break;
             case 'partially_processed':
                 $statusLevel = 'warning';
+
                 break;
         }
 
@@ -46,7 +48,7 @@ class WebhookTransformer extends BaseTransformer
             'created_by' => $webhook->created_by ? ($webhook->creator->full_name . '(' . $webhook->creator->email . ')') : '-',
             'created_at' => format_date_time($webhook->created_at),
             'updated_at' => format_date($webhook->updated_at),
-            'action' => $this->actions($webhook)
+            'action' => $this->actions($webhook),
         ];
 
         return parent::transformResponse($transformedArray);
