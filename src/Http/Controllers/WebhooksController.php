@@ -45,6 +45,7 @@ class WebhooksController extends BaseController
             if ($webhook) {
                 $webhook->saveException($exception);
             }
+
             return apiExceptionResponse($exception);
         }
     }
@@ -82,7 +83,7 @@ class WebhooksController extends BaseController
 
                             $webhook_request = new WebhookRequest();
                             $webhook_request->setMethod('POST');
-                            $webhook_request->merge(array('throw_exception' => true));
+                            $webhook_request->merge(['throw_exception' => true]);
 
                             $this->process($webhook_request, $webhook);
 
@@ -94,9 +95,12 @@ class WebhooksController extends BaseController
 
                     $message = [
                         'level' => 'success',
-                        'message' => trans('utility-webhook::messages.webhook.bulk_processed',
-                            ['processed_count' => $processed, 'failed_count' => $failed])
+                        'message' => trans(
+                            'utility-webhook::messages.webhook.bulk_processed',
+                            ['processed_count' => $processed, 'failed_count' => $failed]
+                        ),
                     ];
+
                     break;
             }
         } catch (\Exception $exception) {

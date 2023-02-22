@@ -2,7 +2,6 @@
 
 namespace Corals\Modules\Utility\Webhook\DataTables;
 
-
 use Corals\Foundation\DataTables\BaseDataTable;
 use Corals\Modules\Utility\Webhook\Models\Webhook;
 use Corals\Modules\Utility\Webhook\Transformers\WebhookTransformer;
@@ -68,14 +67,15 @@ class WebhooksDataTable extends BaseDataTable
             'process' => [
                 'title' => trans('utility-webhook::labels.webhook.process'),
                 'permission' => 'Utility::webhook.process',
-                'confirmation' => trans('Corals::labels.confirmation.title')
-            ]
+                'confirmation' => trans('Corals::labels.confirmation.title'),
+            ],
         ];
     }
 
     protected function getOptions()
     {
         $url = url(config('utility-webhook.models.webhook.resource_url'));
+
         return ['resource_url' => $url];
     }
 

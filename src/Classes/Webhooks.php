@@ -2,7 +2,6 @@
 
 namespace Corals\Modules\Utility\Webhook\Classes;
 
-
 class Webhooks
 {
     public function __construct()
