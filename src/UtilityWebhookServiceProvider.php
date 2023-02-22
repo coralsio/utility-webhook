@@ -2,17 +2,22 @@
 
 namespace Corals\Modules\Utility\Webhook;
 
+use Corals\Foundation\Providers\BasePackageServiceProvider;
+use Corals\Modules\Utility\Webhook\Facades\Webhooks;
 use Corals\Modules\Utility\Webhook\Providers\UtilityAuthServiceProvider;
 use Corals\Modules\Utility\Webhook\Providers\UtilityRouteServiceProvider;
-use Corals\Modules\Utility\Webhook\Facades\Webhooks;
 use Corals\Settings\Facades\Modules;
 use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Foundation\AliasLoader;
-use Illuminate\Support\ServiceProvider;
 
-class UtilityWebhookServiceProvider extends ServiceProvider
+class UtilityWebhookServiceProvider extends BasePackageServiceProvider
 {
-    public function boot()
+    /**
+     * @var
+     */
+    protected $packageCode = 'corals-utility-webhook';
+
+    public function bootPackage()
     {
         $this->loadViewsFrom(__DIR__ . '/resources/views', 'utility-webhook');
         $this->loadTranslationsFrom(__DIR__ . '/resources/lang', 'utility-webhook');
@@ -25,11 +30,9 @@ class UtilityWebhookServiceProvider extends ServiceProvider
             __DIR__ . '/config/utility-webhook.php' => config_path('utility-webhook.php'),
             __DIR__ . '/resources/views' => resource_path('resources/views/vendor/utility-webhook'),
         ]);
-
-        $this->registerModulesPackages();
     }
 
-    public function register()
+    public function registerPackage()
     {
         $this->app->register(UtilityAuthServiceProvider::class);
         $this->app->register(UtilityRouteServiceProvider::class);
@@ -41,7 +44,7 @@ class UtilityWebhookServiceProvider extends ServiceProvider
     }
 
 
-    protected function registerModulesPackages()
+    public function registerModulesPackages()
     {
         Modules::addModulesPackages('corals/utility-webhook');
     }
