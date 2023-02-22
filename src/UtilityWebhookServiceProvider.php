@@ -7,7 +7,6 @@ use Corals\Modules\Utility\Webhook\Facades\Webhooks;
 use Corals\Modules\Utility\Webhook\Providers\UtilityAuthServiceProvider;
 use Corals\Modules\Utility\Webhook\Providers\UtilityRouteServiceProvider;
 use Corals\Settings\Facades\Modules;
-use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Foundation\AliasLoader;
 
 class UtilityWebhookServiceProvider extends BasePackageServiceProvider
@@ -42,7 +41,6 @@ class UtilityWebhookServiceProvider extends BasePackageServiceProvider
             $loader->alias('Webhooks', Webhooks::class);
         });
     }
-
 
     public function registerModulesPackages()
     {
