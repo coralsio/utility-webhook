@@ -1,9 +1,9 @@
 <?php
 
-namespace Corals\Modules\Utility\Webhook\Http\Requests;
+namespace Corals\Utility\Webhook\Http\Requests;
 
 use Corals\Foundation\Http\Requests\BaseRequest;
-use Corals\Modules\Utility\Webhook\Models\Webhook;
+use Corals\Utility\Webhook\Models\Webhook;
 
 class WebhookRequest extends BaseRequest
 {

@@ -1,11 +1,11 @@
 <?php
 
-namespace Corals\Modules\Utility\Webhook\Models;
+namespace Corals\Utility\Webhook\Models;
 
 use Corals\Foundation\Models\BaseModel;
 use Corals\Foundation\Traits\ModelPropertiesTrait;
 use Corals\Foundation\Transformers\PresentableTrait;
-use Corals\Modules\Utility\Webhook\Facades\Webhooks;
+use Corals\Utility\Webhook\Facades\Webhooks;
 use Exception;
 use Spatie\Activitylog\Traits\LogsActivity;
 

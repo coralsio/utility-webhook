@@ -1,6 +1,6 @@
 <?php
 
-namespace Corals\Modules\Utility\Webhook\Transformers;
+namespace Corals\Utility\Webhook\Transformers;
 
 use Corals\Foundation\Transformers\FractalPresenter;
 

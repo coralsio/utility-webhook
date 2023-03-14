@@ -1,12 +1,12 @@
 <?php
 
-namespace Corals\Modules\Utility\Webhook\Http\Controllers;
+namespace Corals\Utility\Webhook\Http\Controllers;
 
 use Corals\Foundation\Http\Controllers\BaseController;
 use Corals\Foundation\Http\Requests\BulkRequest;
-use Corals\Modules\Utility\Webhook\DataTables\WebhooksDataTable;
-use Corals\Modules\Utility\Webhook\Http\Requests\WebhookRequest;
-use Corals\Modules\Utility\Webhook\Models\Webhook;
+use Corals\Utility\Webhook\DataTables\WebhooksDataTable;
+use Corals\Utility\Webhook\Http\Requests\WebhookRequest;
+use Corals\Utility\Webhook\Models\Webhook;
 use Illuminate\Http\Request;
 
 class WebhooksController extends BaseController

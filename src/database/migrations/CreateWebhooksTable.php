@@ -1,6 +1,6 @@
 <?php
 
-namespace Corals\Modules\Utility\Webhook\database\migrations;
+namespace Corals\Utility\Webhook\database\migrations;
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;

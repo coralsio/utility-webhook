@@ -1,10 +1,10 @@
 <?php
 
-namespace Corals\Modules\Utility\Webhook\DataTables;
+namespace Corals\Utility\Webhook\DataTables;
 
 use Corals\Foundation\DataTables\BaseDataTable;
-use Corals\Modules\Utility\Webhook\Models\Webhook;
-use Corals\Modules\Utility\Webhook\Transformers\WebhookTransformer;
+use Corals\Utility\Webhook\Models\Webhook;
+use Corals\Utility\Webhook\Transformers\WebhookTransformer;
 use Yajra\DataTables\EloquentDataTable;
 
 class WebhooksDataTable extends BaseDataTable

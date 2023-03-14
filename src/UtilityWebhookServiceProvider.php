@@ -1,11 +1,11 @@
 <?php
 
-namespace Corals\Modules\Utility\Webhook;
+namespace Corals\Utility\Webhook;
 
 use Corals\Foundation\Providers\BasePackageServiceProvider;
-use Corals\Modules\Utility\Webhook\Facades\Webhooks;
-use Corals\Modules\Utility\Webhook\Providers\UtilityAuthServiceProvider;
-use Corals\Modules\Utility\Webhook\Providers\UtilityRouteServiceProvider;
+use Corals\Utility\Webhook\Facades\Webhooks;
+use Corals\Utility\Webhook\Providers\UtilityAuthServiceProvider;
+use Corals\Utility\Webhook\Providers\UtilityRouteServiceProvider;
 use Corals\Settings\Facades\Modules;
 use Illuminate\Foundation\AliasLoader;
 

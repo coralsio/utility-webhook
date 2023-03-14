@@ -1,9 +1,9 @@
 <?php
 
-namespace Corals\Modules\Utility\Webhook\Policies;
+namespace Corals\Utility\Webhook\Policies;
 
 use Corals\Foundation\Policies\BasePolicy;
-use Corals\Modules\Utility\Webhook\Models\Webhook;
+use Corals\Utility\Webhook\Models\Webhook;
 use Corals\User\Models\User;
 
 class WebhookPolicy extends BasePolicy

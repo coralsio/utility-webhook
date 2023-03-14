@@ -1,6 +1,6 @@
 <?php
 
-namespace Corals\Modules\Utility\Webhook\database\seeds;
+namespace Corals\Utility\Webhook\database\seeds;
 
 use Illuminate\Database\Seeder;
 

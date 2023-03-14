@@ -2,8 +2,8 @@
 
 namespace Tests\Feature;
 
-use Corals\Modules\Utility\Webhook\Facades\Webhooks;
-use Corals\Modules\Utility\Webhook\Models\Webhook;
+use Corals\Utility\Webhook\Facades\Webhooks;
+use Corals\Utility\Webhook\Models\Webhook;
 use Corals\Settings\Facades\Modules;
 use Corals\User\Models\User;
 use Illuminate\Support\Facades\Auth;

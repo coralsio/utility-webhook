@@ -1,6 +1,6 @@
 <?php
 
-namespace Corals\Modules\Utility\Webhook\Facades;
+namespace Corals\Utility\Webhook\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
@@ -11,6 +11,6 @@ class Webhooks extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return \Corals\Modules\Utility\Webhook\Classes\Webhooks::class;
+        return \Corals\Utility\Webhook\Classes\Webhooks::class;
     }
 }

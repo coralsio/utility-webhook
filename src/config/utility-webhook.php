@@ -3,7 +3,7 @@
 return [
     'models' => [
         'webhook' => [
-            'presenter' => \Corals\Modules\Utility\Webhook\Transformers\WebhookPresenter::class,
+            'presenter' => \Corals\Utility\Webhook\Transformers\WebhookPresenter::class,
             'resource_url' => 'utilities/webhooks',
             'events' => [],
             'actions' => [

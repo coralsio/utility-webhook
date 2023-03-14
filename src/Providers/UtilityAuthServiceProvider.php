@@ -1,9 +1,9 @@
 <?php
 
-namespace Corals\Modules\Utility\Webhook\Providers;
+namespace Corals\Utility\Webhook\Providers;
 
-use Corals\Modules\Utility\Webhook\Models\Webhook;
-use Corals\Modules\Utility\Webhook\Policies\WebhookPolicy;
+use Corals\Utility\Webhook\Models\Webhook;
+use Corals\Utility\Webhook\Policies\WebhookPolicy;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
 
 class UtilityAuthServiceProvider extends ServiceProvider

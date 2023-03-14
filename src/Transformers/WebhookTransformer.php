@@ -1,9 +1,9 @@
 <?php
 
-namespace Corals\Modules\Utility\Webhook\Transformers;
+namespace Corals\Utility\Webhook\Transformers;
 
 use Corals\Foundation\Transformers\BaseTransformer;
-use Corals\Modules\Utility\Webhook\Models\Webhook;
+use Corals\Utility\Webhook\Models\Webhook;
 
 class WebhookTransformer extends BaseTransformer
 {

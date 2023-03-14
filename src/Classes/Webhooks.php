@@ -1,6 +1,6 @@
 <?php
 
-namespace Corals\Modules\Utility\Webhook\Classes;
+namespace Corals\Utility\Webhook\Classes;
 
 class Webhooks
 {

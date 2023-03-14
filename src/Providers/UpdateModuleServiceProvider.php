@@ -1,6 +1,6 @@
 <?php
 
-namespace Corals\Modules\Utility\Webhook\Providers;
+namespace Corals\Utility\Webhook\Providers;
 
 use Corals\Foundation\Providers\BaseUpdateModuleServiceProvider;
 

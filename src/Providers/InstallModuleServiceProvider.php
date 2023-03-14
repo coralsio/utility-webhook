@@ -1,10 +1,10 @@
 <?php
 
-namespace Corals\Modules\Utility\Webhook\Providers;
+namespace Corals\Utility\Webhook\Providers;
 
 use Corals\Foundation\Providers\BaseInstallModuleServiceProvider;
-use Corals\Modules\Utility\Webhook\database\migrations\CreateWebhooksTable;
-use Corals\Modules\Utility\Webhook\database\seeds\UtilityWebhookDatabaseSeeder;
+use Corals\Utility\Webhook\database\migrations\CreateWebhooksTable;
+use Corals\Utility\Webhook\database\seeds\UtilityWebhookDatabaseSeeder;
 
 class InstallModuleServiceProvider extends BaseInstallModuleServiceProvider
 {
