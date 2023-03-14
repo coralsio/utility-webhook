@@ -3,10 +3,10 @@
 namespace Corals\Utility\Webhook;
 
 use Corals\Foundation\Providers\BasePackageServiceProvider;
+use Corals\Settings\Facades\Modules;
 use Corals\Utility\Webhook\Facades\Webhooks;
 use Corals\Utility\Webhook\Providers\UtilityAuthServiceProvider;
 use Corals\Utility\Webhook\Providers\UtilityRouteServiceProvider;
-use Corals\Settings\Facades\Modules;
 use Illuminate\Foundation\AliasLoader;
 
 class UtilityWebhookServiceProvider extends BasePackageServiceProvider

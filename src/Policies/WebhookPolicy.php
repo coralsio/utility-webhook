@@ -3,8 +3,8 @@
 namespace Corals\Utility\Webhook\Policies;
 
 use Corals\Foundation\Policies\BasePolicy;
-use Corals\Utility\Webhook\Models\Webhook;
 use Corals\User\Models\User;
+use Corals\Utility\Webhook\Models\Webhook;
 
 class WebhookPolicy extends BasePolicy
 {
