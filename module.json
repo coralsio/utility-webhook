@@ -11,6 +11,6 @@
     "folder": "utility-webhook",
     "icon": "fa fa-anchor",
     "require": {
-        "corals-utility": "^4.0"
+        "corals-utility": "^10.0.0"
     }
 }
